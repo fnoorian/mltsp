@@ -1,0 +1,19 @@
+Package: mltsp
+Type: Package
+Title: Tools for machine-learning based time-series prediction
+Version: 0.1.0
+Author: c(person("Farzad", "Noorian", role = c("aut", "cre"), email = "farzad.noorian@gmail.com"),
+          person("Richard", "Davis", role = c("aut")),
+          person("Tony", "Cooper", role=c("cph"), email="tonyc@iconz.co.nz"))
+Maintainer: Farzad Noorian <farzad.noorian@gmail.com>
+Description: Provides tools for machine-learning based time-series prediction.
+    This includes preprocessing, creating matrices of lags, building a pipeline, and
+    specialized cross-validation.
+License: GPL (>= 2)
+LazyData: TRUE
+URL: https://github.com/fnoorian/mltsp/
+BugReports: https://github.com/fnoorian/mltsp/issues
+Depends: Metrics, forecast, lubridate, xts, zoo
+Suggests: e1071, fpp, timeDate, knitr, testthat
+VignetteBuilder: knitr
+RoxygenNote: 5.0.1
