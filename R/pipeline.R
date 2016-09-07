@@ -107,7 +107,6 @@ mltsp.mltsp_pipeline <- function(pipeline, x, ...) {
 #' @param test_timestamps  Time-stamps of forecast. Will be generated automatically if \code{NULL}.
 #' @param ...              Extra parameters passed to feature extraction, prediction, and inverse pre-processing in the pipeline
 #'
-#' @import forecast
 #' @method forecast mltsp
 #' @export
 forecast.mltsp <- function(object, h, test_timestamps = NULL, ...) {
@@ -146,6 +145,7 @@ forecast.mltsp <- function(object, h, test_timestamps = NULL, ...) {
 #' and returns the forecast as another time-series.
 #'
 #' @seealso \code{\link{build_mltsp_pipline}}, \code{\link{mltsp}}
+#' @importFrom forecast forecast
 #' @export
 mltsp_forecaster <- function(preproc=NULL, featext, learner, predictor = predict, ...) {
 

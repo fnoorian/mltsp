@@ -333,7 +333,6 @@ predict.narx <- function(object, x, h = 10, xreg=NULL, lambda = object$lambda, .
 #'
 #' @return A \code{\link{forecast}} package compatible \code{forecast} object
 #'
-#' @import forecast
 #' @importFrom stats fitted residuals predict
 #' @method forecast narx
 #' @export
