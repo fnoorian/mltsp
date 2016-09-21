@@ -89,15 +89,23 @@ with training on at least 10 data points, use:
 ts_crossval(lh, fcster, horizon = 5, initial_window = 10)
 ```
 
-## Contact Information
- * Farzad Noorian <farzad.noorian@gmail.com>
- * Richard Davis <davisconsulting@gmail.com>
+## License and contact information
 
-## License
-All files in this package, including the documentation and vignettes,
-are distributed under GNU GPL v2.0 or later license.
-For full terms of this license visit <https://www.gnu.org/licenses/gpl-2.0.html>.
+Copyright 2016 Farzad Noorian <farzad.noorian@gmail.com>, Richard Davis <davisconsulting@gmail.com>,
+ Anthony Mihirana de Silva <mihids@gmail.com>.
 
 Some functionality have been taken from GPL package [caret](https://cran.r-project.org/package=caret).
-For a list of other functions dynamicly imported from other packages, see `NAMESPACE` file.
+For a list of other functions dynamically imported from other R packages, see `NAMESPACE` file.
 
+This package is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 2 of the License, or
+(at your option) any later version.
+
+This package is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this package.  If not, see <http://www.gnu.org/licenses/>.
