@@ -15,10 +15,10 @@ devtools::install_github("fnoorian/mltsp")
 
 ## Usage
 
-This package include two vignettes:
+This package includes two vignettes:
 
- * [NARX model guide](https://htmlpreview.github.io/?https://github.com/fnoorian/mltsp/blob/master/inst/doc/narx_guide.html): Simple solution for non-linear auto-regressive forecasting.
- * [Pipeline model guide](https://htmlpreview.github.io/?https://github.com/fnoorian/mltsp/blob/master/inst/doc/pipeline_guide.html): Introduces pipeline model and cross-validation tools.
+ * [NARX model guide](https://fnoorian.github.io/mltsp/inst/doc/narx_guide.html): Simple solution for non-linear auto-regressive forecasting.
+ * [Pipeline model guide](https://fnoorian.github.io/mltsp/inst/doc/pipeline_guide.html): Introduces pipeline model and cross-validation tools.
 
 ### NARX model example
 
