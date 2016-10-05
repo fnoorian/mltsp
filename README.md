@@ -92,7 +92,7 @@ ts_crossval(lh, fcster, horizon = 5, initial_window = 10)
 ## License and contact information
 
 Copyright 2016 Farzad Noorian <farzad.noorian@gmail.com>, Richard Davis <davisconsulting@gmail.com>,
- Anthony Mihirana de Silva <mihids@gmail.com>.
+ Anthony Mihirana de Silva <mihids@gmail.com>, Lei Li <leili8878@gmail.com>.
 
 Some functionality have been taken from GPL package [caret](https://cran.r-project.org/package=caret).
 For a list of other functions dynamically imported from other R packages, see `NAMESPACE` file.

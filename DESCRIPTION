@@ -5,6 +5,7 @@ Version: 0.1.0
 Author: c(person("Farzad", "Noorian", role = c("aut", "cre"), email = "farzad.noorian@gmail.com"),
           person("Richard", "Davis", "I.A.", role = c("aut")),
           person("Anthony", "de Silva", "Mihirana", role = c("aut")),
+          person("Lei", "Li", role = c("aut")),
           person("Tony", "Cooper", role=c("cph"), email="tonyc@iconz.co.nz"))
 Maintainer: Farzad Noorian <farzad.noorian@gmail.com>
 Description: Provides tools for machine-learning based time-series prediction.
