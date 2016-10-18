@@ -65,3 +65,22 @@ test_that("NARX forecast is acceptable for xts data", {
   expect_lt(rmse(b, forecast(sp1d, h=10)$mean), 25)
   expect_lt(rmse(b, forecast(sp1dD, h=10)$mean), 17)
 })
+
+test_that("NARX works for numeric types", {
+
+  input1 = 1:20
+  mdl1 = narx(input1, SimpleLM, p=3)
+  fc1 = forecast(mdl1, h=5)
+  expect_equal(fc1$mean, 21:25)
+
+  input2 = array(1:20)
+  mdl2 = narx(input2, SimpleLM, p=3)
+  fc2 = forecast(mdl2, h=5)
+  expect_equal(fc2$mean, array(21:25))
+
+  input3 = seq(0, 5, by = 0.5)
+  mdl3 = narx(input3, SimpleLM, p=3)
+  fc3 = forecast(mdl3, h=5)
+  expect_equal(fc3$mean, seq(5.5, 7.5, by = 0.5))
+
+})

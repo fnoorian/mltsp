@@ -106,14 +106,18 @@ ts_continue <- function(timeseries, newdata) {
     # calculate the new time stamp if not given
     new.ts = xts(newdata, new_timestamps)
 
-  }  else if ("ts" %in% class(timeseries)) {
+  } else if ("ts" %in% class(timeseries)) {
 
     new.ts  = ts(data = newdata,
                start=new_timestamps[1],
                end=tail(new_timestamps, 1),
                deltat = new_timestamps[2] - new_timestamps[1])
+  } else if (is.array(timeseries)) {
+    new.ts = as.array(newdata)
+  } else if (is.vector(timeseries)) {
+    new.ts = as.vector(newdata)
   } else {
-    stop("Time-series not supported")
+    stop(paste("Time-series not supported for class", class(timeseries)))
   }
 
   return(new.ts)
