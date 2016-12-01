@@ -51,10 +51,10 @@ aggregate_xts <- function(data, on, k = 1, FUN = "sum", na_handling = "auto", al
     end_date = as.POSIXct(end_date)
   }
 
-  if (!class(start_date) %in% class(index(data))) {
+  if (any(class(start_date) != class(index(data)))) {
     stop("Start date must have the same type as the data")
   }
-  if (!class(end_date) %in% class(index(data))) {
+  if (any(class(end_date) != class(index(data)))) {
     stop("End date must have the same type as the data")
   }
 
